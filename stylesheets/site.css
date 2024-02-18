@@ -1,0 +1,64 @@
+h1{
+    color: blueviolet;
+}
+h2{
+    color: cadetblue;
+    text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p, li{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#banner{
+    background-color:rgb(207, 165, 228);
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#banner p{
+    margin: 0;
+}
+
+#nav{
+    background-color: aliceblue;
+    padding: 10px;
+    text-align: center;
+}
+
+#nav a{
+    color:hotpink;
+    text-decoration: none;
+    font-size: large;
+    margin-right: 8px;
+}
+
+#nav a:hover{
+    background-color: cadetblue;
+}
+
+#footer{
+    background-color:rgb(42, 34, 90);
+    min-height: 150px;
+    text-align: center;
+}
+
+#footer a{
+    color: hotpink;
+    text-decoration: overline;
+    text-align: center;
+    margin-right: 8px;
+}
+
+#main{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo{
+    height: 50px; 
+    width: 50px;
+}

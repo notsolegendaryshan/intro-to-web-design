@@ -4,64 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="stylesheets/site.css"/>
 </head>
 <body>
-    <a href="index.html">Home</a>
-    <a href="about_us.html">About Us</a>
-    <a href="contact_us.html">Contact Us</a>
+    <div id="header">
+        <div id="banner">
+            <p>Random website banner</p>
+        </div>
+        <div id="nav">
+            <a href="index.html">Home</a>
+            <a href="about_us.html">About Us</a>
+            <a href="contact_us.html">Contact Us</a>
+        </div>
+    </div>
     
-    <h1 style="color: blueviolet;">Contact Us</h1>
-    <hr/>
-    <h2>Locations</h2>
-    <table>
-        <tr>
-            <th>Location</th>
-            <th>Opening Hours</th>
-            <th>Email Address</th>
-            <th>Phone Number</th>
-        </tr>
-        <tr>
-            <td>Mandeville</td>
-            <td>9:00 AM - 5:00 PM</td>
-            <td>mandeville@monke.com</td>
-            <td>1 (800) 845-6665</td>
-        </tr>
-        <tr>
-            <td>Portmore</td>
-            <td>8:00 AM - 4:00 PM</td>
-            <td>portmore@monke.com</td>
-            <td>1 (800) 855-6665</td>
-        </tr>
-        <tr>
-            <td>Ocho Rios</td>
-            <td>9:00 AM - 5:00 PM</td>
-            <td>ochorios@monke.com</td>
-            <td>1 (800) 865-6665</td>
-        </tr>
-        <tr>
-            <td>Liguanea</td>
-            <td>8:00 AM - 4:00 PM</td>
-            <td>liguanea@monke.com</td>
-            <td>1 (800) 875-6665</td>
-        </tr>
-    </table>
-    
-    <h2>General Inquiries</h2>
-    <form action="confirmation.html">
-        <label for="fullname">Name: *</label><br/>
-        <input required type="text" id="fullname" name="fullname"/>
+    <div id="main">
+        <h1>Contact Us</h1>
+        <hr/>
+        <h2>Locations</h2>
+        <table>
+            <tr>
+                <th>Logo</th>
+                <th>Location</th>
+                <th>Opening Hours</th>
+                <th>Email Address</th>
+                <th>Phone Number</th>
+            </tr>
+            <tr>
+                <td>
+                    <img class="logo" src="images/monkeylogo.jpg" alt="Logo"/>
+                </td>
+                <td>Mandeville</td>
+                <td>9:00 AM - 5:00 PM</td>
+                <td>mandeville@monke.com</td>
+                <td>1 (800) 845-6665</td>
+            </tr>
+            <tr>
+                <td>
+                    <img class="logo" src="images/monkeylogo.jpg" alt="Logo"/>
+                </td>
+                <td>Portmore</td>
+                <td>8:00 AM - 4:00 PM</td>
+                <td>portmore@monke.com</td>
+                <td>1 (800) 855-6665</td>
+            </tr>
+            <tr>
+                <td>
+                    <img class="logo" src="images/monkeylogo.jpg" alt="Logo"/>
+                </td>
+                <td>Ocho Rios</td>
+                <td>9:00 AM - 5:00 PM</td>
+                <td>ochorios@monke.com</td>
+                <td>1 (800) 865-6665</td>
+            </tr>
+            <tr>
+                <td>
+                    <img class="logo" src="images/monkeylogo.jpg" alt="Logo"/>
+                </td>
+                <td>Liguanea</td>
+                <td>8:00 AM - 4:00 PM</td>
+                <td>liguanea@monke.com</td>
+                <td>1 (800) 875-6665</td>
+            </tr>
+        </table>
+        
+        <h2>General Inquiries</h2>
+        <form action="confirmation.html">
+            <label for="fullname">Name: *</label><br/>
+            <input required type="text" id="fullname" name="fullname"/>
+            <br/><br/>
+            <label for="email">Email address: *</label><br/>
+            <input required type="email" id="email" name="emailaddress"/>
+            <br/><br/>
+            <label>Are you employed?</label><br/>
+            <input type="radio" value="Y" name="employed"/> Yes
+            <input type="radio" value="N" name="employed"/> No
+            <br/><br/>
+            <label for="inquiry">State your inquiry *</label><br/>
+            <textarea required cols="50" rows="10" maxlength="150" id="inquiry"></textarea>
+            <br/><br/>
+            <input type="submit"/>
+            <br/><br/>
+        </form>
+    </div>
+
+    <div id="footer">
         <br/><br/>
-        <label for="email">Email address: *</label><br/>
-        <input required type="email" id="email" name="emailaddress"/>
+        <a href="https://www.amazon.com/">Amazon</a>
+        <a href="https://www.ebay.com" target="_blank">eBay</a> <!--Opens up link in new tab-->
+        <a href="https://www.iamshemarforsythe.com" target="_blank">Pookie Promo</a>
         <br/><br/>
-        <label>Are you employed?</label><br/>
-        <input type="radio" value="Y" name="employed"/> Yes
-        <input type="radio" value="N" name="employed"/> No
-        <br/><br/>
-        <label for="inquiry">State your inquiry *</label><br/>
-        <textarea required cols="50" rows="10" maxlength="150" id="inquiry"></textarea>
-        <br/><br/>
-        <input type="submit"/>
-    </form>
+    </div> 
 </body>
 </html>
